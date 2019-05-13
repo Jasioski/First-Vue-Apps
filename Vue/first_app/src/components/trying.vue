@@ -1,7 +1,8 @@
 <template>
   <v-layout>
-    this is a test page
+  <img src="./pics/pol.png">
+    this is a test
     <br />
-    SUCCESS!!
+    Success!
   </v-layout>
 </template>

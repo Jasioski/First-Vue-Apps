@@ -14,10 +14,20 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.19.0",
     "bootstrap": "^4.3.1",
-    "bootstrap-vue": "^2.0.0-rc.19",
+    "bootstrap-vue": "^2.0.0-rc.20",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongodb": "^3.2.4",
+    "mongoose": "^5.5.7",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
+    "vue-star-rating": "^1.6.1",
+    "vue-swal": "^1.0.0",
     "vuetify": "^1.5.14"
   },
   "devDependencies": {
