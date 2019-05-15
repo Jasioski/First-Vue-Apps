@@ -1,11 +1,15 @@
 <template>
   <div class="hello">
     <h1>The count is: {{ fetchCount }}</h1>
-	<button class="btn btn-primary" @click="increment">Increase number</button>
-	<button class="btn btn-primary" @click="decrement">Decrease number</button> 
+	<button class="btn btn-primary" @click="increment">Increment number</button>
+	<button class="btn btn-primary" @click="decrement">Decrement number</button> 
     <br />
 	<br />
-	<button class="btn btn-primary" @click="save">Save to database</button> 
+	<button class="btn btn-primary" @click="save">Set the counter</button> 
+	<button class="btn btn-primary" @click="date">Get date and time</button> 
+	<br />
+	<br />
+	<p1> {{ fetchStat }} </p1>
   </div>
 </template>
 
@@ -13,10 +17,12 @@
 import { mapGetters, mapActions } from 'vuex'
 import axios from 'axios';
 
+
 export default {
   name: 'HelloWorld',
   computed: mapGetters([
-    'fetchCount'
+    'fetchCount',
+	'fetchStat'
   ]),
   
   methods:
@@ -25,6 +31,7 @@ export default {
     'increment',
     'decrement',
 	'save',
+	'date'
   ]),
 }
 </script>
@@ -34,6 +41,11 @@ export default {
 h1, h2 {
   font-weight: normal;
 }
+
+p1 {
+  font-weight: bold;
+}
+
 ul {
   list-style-type: none;
   padding: 0;

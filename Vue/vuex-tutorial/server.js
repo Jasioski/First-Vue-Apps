@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const morgan = require('morgan');
 const fs = require('fs');
+const mongoose = require('mongoose');
 
 const app = express();
 const router = express.Router();
@@ -11,7 +12,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 //connect to mongodb
-mongo.connect('mongodb://localhost/vuex-demo', function() {
+mongoose.connect('mongodb://localhost/vuex-demo', function() {
   console.log('Connection has been made');
 })
 

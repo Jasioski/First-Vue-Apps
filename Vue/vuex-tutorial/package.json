@@ -11,7 +11,12 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.16.4",
+    "mongoose": "^5.5.8",
+    "morgan": "^1.9.1",
+    "swal": "^0.1.0",
     "vue": "^2.5.2"
   },
   "devDependencies": {
